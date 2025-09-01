@@ -1,0 +1,51 @@
+[global]
+# Notification display duration in seconds.
+timeout = 10
+# Corner of the screen to display notifications.
+# Options: top-left, top-right, bottom-left, bottom-right.
+origin = top-right
+# Offset from the screen edge in pixels (x, y).
+offset = (10, 10)
+# Maximum number of notifications to show at once.
+max_notifications = 5
+# Font used for notification text.
+font = SF Pro 10
+# Colors for the notification background, foreground, and border.
+# Format: #RRGGBB or #RRGGBBAA (with alpha channel for transparency).
+background = "#282a36cc"  # 80% opacity
+foreground = "#f8f8f2"
+frame_color = "#6272a466"  # 40% opacity border
+# Border width in pixels.
+frame_width = 1
+# Rounded corners for modern look
+corner_radius = 12
+# Show age of notification (e.g., "5s ago").
+show_age_threshold = 60
+# Allow HTML markup in notifications.
+markup = full
+# Icon theme to use.
+icon_theme = Adwaita
+# Follow mouse pointer for notification placement.
+# Options: mouse, keyboard, none.
+follow_mode = none
+# Hide notifications when fullscreen applications are active.
+hide_on_fullscreen = true
+
+[urgency_low]
+# Specific settings for low urgency notifications.
+background = "#44475acc"  # 80% opacity
+foreground = "#f8f8f2"
+frame_color = "#6272a433"  # 20% opacity border
+
+[urgency_normal]
+# Specific settings for normal urgency notifications.
+background = "#282a36cc"  # 80% opacity
+foreground = "#f8f8f2"
+frame_color = "#6272a466"  # 40% opacity border
+
+[urgency_critical]
+# Specific settings for critical urgency notifications.
+background = "#ff5555dd"  # 87% opacity (slightly more opaque for visibility)
+foreground = "#f8f8f2"
+frame_color = "#ff555588"  # 53% opacity border
+timeout = 0 # Critical notifications stay until dismissed.

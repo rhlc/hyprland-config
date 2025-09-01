@@ -1,0 +1,36 @@
+window {
+  font-family: SF Pro;
+  font-size: 13px;
+  background: rgba(25, 25, 30, 0.9); /* semi-transparent dark */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  padding: 4px 8px;
+  margin: 8px 16px;
+}
+
+#input {
+  margin: 5px;
+  color: #fff;
+  background-color: rgba(25, 25, 30, 0.5); /* semi-transparent dark */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#inner-box {
+  margin: 5px;
+  background: none;
+}
+
+#outer-box {
+  background: none;
+}
+
+#scroll {
+  display: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+}
